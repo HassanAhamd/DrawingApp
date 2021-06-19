@@ -40,15 +40,18 @@ class MainActivity : AppCompatActivity() {
                 .setRoundColorButton(true)
                 .show()
         }
+        mBinding.delete.setOnClickListener {
+            mBinding.dvDrawView.clearCanvas()
+        }
 
         mBinding.undoLastPaint.setOnClickListener {
             mBinding.dvDrawView.undo()
-           Toast.makeText(this,"Undo Sucessfully",Toast.LENGTH_SHORT).show()
+
         }
 
         mBinding.reundoLastPaint.setOnClickListener {
             mBinding.dvDrawView.redo()
-            Toast.makeText(this,"Re-Undo Sucessfully",Toast.LENGTH_SHORT).show()
+
         }
 
         }

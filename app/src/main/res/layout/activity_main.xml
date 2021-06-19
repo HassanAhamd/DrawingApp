@@ -60,5 +60,17 @@
         app:srcCompat="@drawable/redo"
         tools:ignore="VectorDrawableCompat"
         android:focusable="true" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_above="@+id/reundoLastPaint"
+        android:backgroundTint="@color/grey"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        tools:ignore="VectorDrawableCompat"
+        android:focusable="true"
+        android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>
